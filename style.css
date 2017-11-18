@@ -1,0 +1,50 @@
+#container{
+  display: inline-block;
+  position: relative;
+  background-color: #d36169;
+  margin: 10px;
+  padding: 3.5em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*  Menu Itens  */
+.itens{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+/*  Main Bar  */
+.bar{
+  position: absolute;
+  background-color: #fff;
+  height: 17px;
+  width: 100%;
+  border-radius: 8px;
+	transition: all cubic-bezier(0,0,0,1.34) 0.32s;
+}
+
+/*  Bar 1, 2 and 3 */
+.bar1{
+  top: 15%;
+}
+
+.bar2{
+  top: 45%;
+}
+
+.bar3{
+  top: 75%;
+}
+
+/* Adding class close */
+
+.menu.close .bar1{
+  transform: rotate(45deg);
+  top: 49%;  
+}
+
+.menu.close .bar2, .menu.close .bar3{
+  transform: rotate(-45deg);
+  top: 49%;
+} 
